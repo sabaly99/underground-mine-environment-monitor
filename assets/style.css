@@ -1,0 +1,24 @@
+/* Dash-specific glue. Colours/layout come from the shared design system injected by dash_app.py (themes.py + ui.py).
+   No external fonts, scripts or images: works fully offline. */
+.shell{--Dash-Fill-Interactive-Strong:var(--accent);--Dash-Fill-Inverse-Strong:var(--surface);--Dash-Text-Strong:var(--ink);--Dash-Text-Weak:var(--muted);--Dash-Text-Disabled:var(--muted);
+  --Dash-Fill-Interactive-Weak:var(--raised);--Dash-Stroke-Strong:var(--axis);--Dash-Stroke-Weak:var(--grid);--Dash-Fill-Disabled:var(--grid);--Dash-Text-Primary:var(--accent);
+  --Dash-Fill-Primary-Hover:var(--accent);--Dash-Fill-Primary-Active:var(--accent);--Dash-Shading-Weak:rgba(0,0,0,.25);--Dash-Shading-Strong:rgba(0,0,0,.4)}
+#react-entry-point,#_dash-app-content{display:contents}
+.md p{margin:0}.md>div{margin:0}
+.nav .mi{display:inline-flex;align-items:center}.nav.on .mi{color:var(--accent)}
+.search .mi,.iconbtn .mi{display:inline-flex;color:var(--muted)}.iconbtn .mi{color:var(--ink2)}
+.search input[type=search]{-webkit-appearance:none}
+.theme-dd{min-width:170px}.sel .mi{display:inline-flex;color:var(--muted)}
+.box-dd{min-width:min(360px,100%)}
+.pilltabs label{display:flex;gap:8px;align-items:center;color:var(--ink2);font-size:14px;padding:10px 10px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.pilltabs label:has(input:checked){color:var(--ink);font-weight:600;border-bottom-color:var(--accent)}
+.pilltabs label:hover{color:var(--ink)}.pilltabs input{position:absolute;opacity:0;pointer-events:none}.pilltabs label:has(input:focus-visible){outline:2px solid var(--accent)}
+.pilltabs .n{background:var(--raised);color:var(--muted);border-radius:999px;font-size:12px;padding:1px 9px}.pilltabs label:has(input:checked) .n{background:var(--accent-soft);color:var(--ink)}
+.dash-spreadsheet-container .dash-spreadsheet-inner td,.dash-spreadsheet-container .dash-spreadsheet-inner th{font-family:inherit}
+.dash-spreadsheet-container .previous-next-container{color:var(--ink2)}.dash-spreadsheet-container button{color:var(--ink)}
+.search input[type=search]{border:0!important;background:transparent!important;box-shadow:none!important;color:var(--ink)!important;outline:0!important;height:100%;width:100%;padding:0!important}
+.chip{cursor:pointer;color:var(--ink)}.chip:hover{border-color:var(--accent)}
+.search .dash-input-container{border:0!important;background:transparent!important;flex:1;min-width:0;height:100%;padding:0!important;margin:0!important}
+.search .dash-input-element{border:0!important;background:transparent!important;color:var(--ink)!important;height:100%;width:100%;padding:0!important;outline:0!important;box-shadow:none!important;font:inherit}
+.sel .dash-dropdown{border:0!important;background:transparent!important;box-shadow:none!important;color:var(--ink)!important;min-width:130px}
+.box-dd.dash-dropdown{background:var(--surface)!important;border:1px solid var(--axis)!important;border-radius:12px!important;color:var(--ink)!important}
